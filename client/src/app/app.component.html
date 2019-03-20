@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<div *ngIf="user">
+  Welcome {{user?.name}}!
+  <button (click)="oktaService.logout()">Logout</button>
+</div>
+
+<router-outlet [hidden]="!user"></router-outlet>
+
