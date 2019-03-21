@@ -3,7 +3,7 @@
 start=`pwd`
 
 # set origin for client on server
-sed -i -e "s|http://localhost:4200|https://notes-with-typescript.cfapps.io|g" $start/src/main/kotlin/com/okta/developer/notes/NotesApplication.kt
+sed -i -e "s|http://localhost:4200|https://notes-with-typescript_mxu.cfapps.io|g" $start/src/main/kotlin/com/okta/developer/notes/NotesApplication.kt
 
 mvn clean package -f $start/pom.xml
 

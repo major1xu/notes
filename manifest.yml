@@ -2,12 +2,12 @@
 applications:
 
 - name: notes-server
-  host: notes-by-kotlin
+  host: notes-by-kotlin_mxu
   path: ./target/notes-0.0.1-SNAPSHOT.jar
   env :
     FORCE_HTTPS: true
 
-- name: notes-client
+- name: notes-client_mxu
   host: notes-with-typescript
   path: ./client/dist/
   env :
