@@ -9,7 +9,7 @@ export class OktaAuthService {
 
 signIn = new OktaSignIn({
 baseUrl: 'https://dev-879975.okta.com',
-clientId: '0oa1dam8ebDLvIGmh357',
+clientId: '0oadd2bofLkLJ6fDE356',
 redirectUri: 'http://localhost:4200',
 authParams: {
 issuer: 'default',
