@@ -1,4 +1,17 @@
-<h2>Notes List</h2>
-<div *ngFor="let note of notes">
-  {{note.text}}
-</div>
+<mat-card>
+  <mat-card-title>Notes List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let note of notes" class="link"
+                    [routerLink]="['/notes', note.id]">
+        {{note.text}}
+      </mat-list-item>
+      <mat-list-item *ngIf="!notes || notes?.length === 0">
+        <p>No notes found.</p>
+      </mat-list-item>
+    </mat-list>
+    <button mat-fab color="accent" class="btn-add" routerLink="add">
+      <mat-icon>add circle</mat-icon>
+    </button>
+  </mat-card-content>
+</mat-card>
